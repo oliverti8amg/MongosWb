@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Juegos de Mongos</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>🕹️ Juegos de Mongos</h1>
+  </header>
+
+  <main class="grid">
+    <div class="game-card" onclick="openModal('juego1')">
+      <img src="src/img/scheduleuno/header.jpg" alt="Juego 1" />
+      <h3>Schedule I</h3>
+    </div>
+
+    <div class="game-card" onclick="openModal('juego2')">
+      <img src="src/img/repo/49182c9c43ab11c64551eabbef51beb5.jpg" alt="Juego 2" />
+      <h3>R.E.P.O</h3>
+    </div>
+  </main>
+
+  <!-- Modal Juego 1 -->
+  <div class="modal" id="juego1">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('juego1')">&times;</span>
+      <h2>Schedule I</h2>
+      <div class="modal-images">
+        <img src="src/img/scheduleuno/header.jpg" />
+      </div>
+      <p>Un shooter con estética noventera donde eres un hacker loco que quiere romper el sistema.</p>
+      <a href="https://drive.usercontent.google.com/download?id=1Hk3yqt-Wn0JtYgz6ihDQEqWD1IZ1UhDW&export=download" download class="btn">Descargar</a>
+    </div>
+  </div>
+
+  <!-- Modal Juego 2 -->
+  <div class="modal" id="juego2">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('juego2')">&times;</span>
+      <h2>R.E.P.O</h2>
+      <div class="modal-images">
+        <img src="src/img/repo/49182c9c43ab11c64551eabbef51beb5.jpg" />
+      </div>
+      <p>R.E.P.O. es un juego de terror cooperativo donde debes recuperar objetos valiosos en entornos peligrosos sin alertar a monstruos sensibles al sonido. UPDATE CON MODS</p>
+      <a href="https://drive.google.com/file/d/1d79fMeGR7F-ylTwZOm1kREYsQGjhKVKy/view?usp=sharing" download class="btn">Descargar</a>
+    </div>
+  </div>
+  <script>
+    function openModal(id) {
+      document.getElementById(id).style.display = "flex";
+    }
+    function closeModal(id) {
+      document.getElementById(id).style.display = "none";
+    }
+  </script>
+</body>
+</html>
